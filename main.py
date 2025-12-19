@@ -22,8 +22,12 @@ game_on = True
 while game_on:
     screen.update() # updates the screen once all squares have move forward
     time.sleep(0.1) # adds a 0.1 second delay after all squares have moved
-
     snake.move()
+
+    # if the snake's head is within 15 pixels off the food
+    if snake.head.distance(food) < 15:
+        food.refresh()
+
 
 
 screen.exitonclick()
