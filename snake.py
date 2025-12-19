@@ -3,6 +3,10 @@ from turtle import Turtle
 # starting positions the three starting squares
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)] # tuples
 MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
 
 class Snake:
     def __init__(self):
@@ -30,13 +34,17 @@ class Snake:
         self.segments[0].forward(MOVE_DISTANCE)
 
     def up(self):
-        self.head.setheading(90)
+        if self.head.heading() != DOWN: # if pointing down, is not allowed to go up
+            self.head.setheading(UP)
 
     def down(self):
-        self.head.setheading(270)
+        if self.head.heading() != UP: # if pointing up, is not allowed to go down
+            self.head.setheading(DOWN)
 
     def left(self):
-        self.head.setheading(180)
+        if self.head.heading() != RIGHT: # if pointing right, is not allowed to go left
+            self.head.setheading(LEFT)
 
     def right(self):
-        self.head.setheading(0)
+        if self.head.heading() != LEFT: # if pointing left, is not allowed to go right
+            self.head.setheading(RIGHT)
