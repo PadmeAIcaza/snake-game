@@ -15,14 +15,23 @@ class Snake:
         self.create_snake()
         self.head = self.segments[0]
 
+    '''creates snake's body'''
     def create_snake(self):
-        '''creates snake's body'''
         for position in STARTING_POSITIONS:
-            new_segment = Turtle('square')
-            new_segment.color('white')
-            new_segment.penup()  # it won't draw the default line
-            new_segment.goto(position)
-            self.segments.append(new_segment)
+            self.add_segment(position)
+
+    def add_segment(self, position):
+        new_segment = Turtle('square')
+        new_segment.color('white')
+        new_segment.penup()  # it won't draw the default line
+        new_segment.goto(position)
+        self.segments.append(new_segment)
+
+    '''adds a new segment everytime snake eats'''
+    def extend(self):
+        # adds a segment to the end of the snake (the tail)
+        self.add_segment(self.segments[-1].position()) # position() comes from turtle class
+
 
     def move(self):
         # start  stop  step
