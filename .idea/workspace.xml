@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a879435-72e7-4bd8-a6a4-3693c9c13d7f" name="Changes" comment="Adding food class">
+    <list default="true" id="5a879435-72e7-4bd8-a6a4-3693c9c13d7f" name="Changes" comment="Refresh food after every collision">
+      <change afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766159411163</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refresh food after every collision">
+      <option name="closed" value="true" />
+      <created>1766159802675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766159802675</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +146,7 @@
     <MESSAGE value="Moving the snake onkey" />
     <MESSAGE value="Adding movement constraints" />
     <MESSAGE value="Adding food class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding food class" />
+    <MESSAGE value="Refresh food after every collision" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refresh food after every collision" />
   </component>
 </project>
