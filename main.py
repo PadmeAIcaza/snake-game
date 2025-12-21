@@ -6,7 +6,7 @@ import time
 
 screen = Screen()
 screen.setup(600, 600) # 300 per -ve and +ve axis
-screen.bgcolor('black')
+screen.bgcolor('coral')
 screen.title('Snake Game')
 screen.tracer(0) # turn off the tracer
 

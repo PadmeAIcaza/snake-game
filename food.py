@@ -8,7 +8,7 @@ class Food(Turtle):
         self.shape('circle')
         self.penup()
         self.shapesize(0.5, 0.5) # stretches the lenght and width
-        self.color('blue')
+        self.color('yellow')
         self.speed('fastest')
         self.refresh()
 
